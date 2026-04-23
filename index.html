@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>САША — ПОЗОР ЧЕЛОВЕЧЕСТВА</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #1a0000, black);
+            color: #ff4444;
+            font-family: 'Impact', 'Arial Black', 'Comic Sans MS', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 5em;
+            letter-spacing: -2px;
+            text-shadow: 6px 6px 0px #440000;
+            animation: shake 0.3s infinite;
+        }
+        .insult-box {
+            background: #220000;
+            border: 4px dashed #ff0000;
+            margin: 30px auto;
+            padding: 25px;
+            width: 80%;
+            font-size: 1.8em;
+            border-radius: 30px;
+            box-shadow: 0 0 25px red;
+        }
+        .name-highlight {
+            font-size: 2.2em;
+            background: black;
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 50px;
+            color: #ff8888;
+        }
+        button {
+            background: #aa0000;
+            color: white;
+            font-size: 2em;
+            padding: 15px 35px;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+            font-weight: bold;
+            border-radius: 60px;
+            transition: 0.2s;
+        }
+        button:hover {
+            background: #ff0000;
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 60px;
+            color: #550000;
+            font-family: monospace;
+        }
+        @keyframes shake {
+            0% { transform: translate(2px, 1px); }
+            50% { transform: translate(-2px, -1px); }
+            100% { transform: translate(1px, -1px); }
+        }
+        img {
+            max-width: 250px;
+            border: 5px solid red;
+            border-radius: 50%;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>САША — ТЫ 💩</h1>
+    <div class="insult-box">
+        <span class="name-highlight">САША</span><br><br>
+        ➤ Твоё имя звучит как звук падающего унитаза.<br>
+        ➤ Каждый Саша, которого я знаю — бесполезный геморрой.<br>
+        ➤ Саша, у тебя интеллект табуретки.<br>
+        ➤ Ты — причина, почему люди пьют.<br>
+        ➤ Даже клоуны говорят: "Боже, какой же Саша жалкий".<br>
+        ➤ Твой портрет в словаре рядом со словом "неудачник".<br>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Emoji_u1f4a9.svg/1024px-Emoji_u1f4a9.svg.png" alt="какашка">
+    <br>
+    <button onclick="newInsultForSasha()">😈 ОСКОРБИТЬ САШУ ЕЩЁ 😈</button>
+    <div class="footer">
+        Minceft198 — Саша, ты ничто. Сайт без пощады.
+    </div>
+
+    <script>
+        const sashaInsults = [
+            "Саша, если бы тупость была золотом, ты был бы форт Нокс.",
+            "Саша, ты настолько мерзкий, что даже говно говорит: 'фу, брезгую'.",
+            "Саша, твоя родословная — это баг в ДНК.",
+            "Саша, ты — живая ошибка 505.",
+            "Саша, когда ты родился, врач сказал: 'И это выжило?'",
+            "Саша, даже хомяки умнее тебя, а они едят свои какашки.",
+            "Саша, твоё лицо подходит только для рекламы кондиционера для белья — стирает память.",
+            "Саша, если бы мозг был динамитом, в твоей голове не хватило бы заряда чихнуть."
+        ];
+
+        function newInsultForSasha() {
+            let randomIndex = Math.floor(Math.random() * sashaInsults.length);
+            alert("⚠️ СЛУШАЙ СЮДА, САША ТУПОЙ: " + sashaInsults[randomIndex]);
+        }
+    </script>
+</body>
+</html>
